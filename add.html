@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Homes | Rent-A-Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <h2 class="logo">Rent-A-Home</h2>
+  <button class="btn-outline" onclick="goHome()">Back</button>
+</header>
+
+<section class="form-container">
+  <h1>List a Home</h1>
+
+  <input id="title" placeholder="Home Title">
+  <input id="location" placeholder="Location">
+  <input id="price" placeholder="Monthly Rent">
+  <input id="phone" placeholder="Phone Number">
+  <textarea id="description" placeholder="Description"></textarea>
+
+  <button class="btn-primary" onclick="saveHome()">Add Listing</button>
+</section>
+
+<section class="cards" id="listingContainer"></section>
+
+<script src="app.js"></script>
+</body>
+</html>
